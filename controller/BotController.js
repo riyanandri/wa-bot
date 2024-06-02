@@ -14,7 +14,7 @@ module.exports = class BotController extends Controller {
         f("menu.bupatiWalikota"),
         f("menu.perjanjianKerjasama"),
         f("menu.peresmian"),
-        f("menu.kunjunganKerja"),
+        // f("menu.kunjunganKerja"),
         f("menu.kontakADC"),
         f("menu.pleacing"),
       ],
@@ -41,7 +41,8 @@ module.exports = class BotController extends Controller {
         f("menu.DH12"),
       ],
       f("dasarHukum"),
-      f("template.menu")
+      f("template.menu"),
+      f("notes")
     );
   }
 
@@ -134,9 +135,10 @@ module.exports = class BotController extends Controller {
 
   async tataTempat(request) {
     return Response.menu.fromArrayOfString(
-      [f("menu.TT1"), f("menu.TT2")],
+      [f("menu.TT2")],
       f("tataTempat"),
-      f("template.menu")
+      f("template.menu"),
+      f("notes")
     );
   }
 
@@ -150,7 +152,8 @@ module.exports = class BotController extends Controller {
         f("menu.FKP5"),
       ],
       f("fkp"),
-      f("template.menu")
+      f("template.menu"),
+      f("notes")
     );
   }
 
@@ -191,23 +194,23 @@ module.exports = class BotController extends Controller {
 
   async tataTempatDoc(request) {
     const documentUrl =
-      "https://docs.google.com/document/d/1FoHgckVXPeCwFI5w9YVL8NsOQ9GQBR7N/edit?usp=sharing&ouid=115675429210404886176&rtpof=true&sd=true";
-    const message = "DOKUMEN TATA TEMPAT";
-    return this.reply([documentUrl, message]);
+      "https://drive.google.com/uc?export=download&id=1RrUZeMQ3XzBkDYjk5IjrRNNzbc92Oczg";
+    const message = "TATA TEMPAT";
+    return this.reply([Response.document.fromURL(documentUrl), message]);
   }
 
   async tataUpacara(request) {
     const documentUrl =
-      "https://docs.google.com/document/d/1a36qvC34p8vWgvWea12mLdwxsPgmffU6/edit?usp=sharing&ouid=115675429210404886176&rtpof=true&sd=true";
-    const message = "DOKUMEN TATA UPACARA";
-    return this.reply([documentUrl, message]);
+      "https://drive.google.com/uc?export=download&id=16dVsKGp_PtfyECdZeWYyN7GJ4bRL7p-0";
+    const message = "TATA UPACARA";
+    return this.reply([Response.document.fromURL(documentUrl), message]);
   }
 
   async tataPenghormatan(request) {
     const documentUrl =
-      "https://docs.google.com/document/d/1IDdktPWfXU9WvUZdY483iaKhBgNcXOk5/edit?usp=sharing&ouid=115675429210404886176&rtpof=true&sd=true";
+      "https://drive.google.com/uc?export=download&id=1jra8Fa6ZLyprwnqsMfaqiomHBwqj3kKP";
     const message = "DOKUMEN TATA PENGHORMATAN";
-    return this.reply([documentUrl, message]);
+    return this.reply([Response.document.fromURL(documentUrl), message]);
   }
 
   async kegiatanKeprotokolan(request) {
@@ -227,10 +230,10 @@ module.exports = class BotController extends Controller {
 
   async bupatiWalikota(request) {
     const documentUrl =
-      "https://docs.google.com/document/d/1wbp7GKc1AnjJOTbt5kl6HAvmrA4r9gdl/edit?usp=sharing&ouid=115675429210404886176&rtpof=true&sd=true";
+      "https://drive.google.com/uc?export=download&id=1xxQIzYnRe8h5tAfEWDq-pf6krZrTVwmp";
     const message =
       "KEGIATAN PELANTIKAN DAN PENGAMBILAN SUMPAH JABATAN DAN PELANTIKAN BUPATI/WALIKOTA";
-    return this.reply([documentUrl, message]);
+    return this.reply([Response.document.fromURL(documentUrl), message]);
   }
 
   async perjanjianKerjasama(request) {
@@ -259,7 +262,8 @@ module.exports = class BotController extends Controller {
         f("menu.ADC6"),
       ],
       f("adc"),
-      f("template.menu")
+      f("template.menu"),
+      f("notes")
     );
   }
 

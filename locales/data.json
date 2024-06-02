@@ -1,6 +1,7 @@
 {
   "intro": "Selamat Datang di [AI] PROTOKOL INFO PROVINSI JAWA TENGAH",
   "footer": "Ketik *info* kapanpun jika Anda ingin mengulangi ke tampilan Menu Utama",
+  "notes": "Anda dapat berpindah ke pilihan manapun jika masih dalam satu menu yang sama. Tetapi jika ingin kembali ke menu utama, anda dapat melakukkannya dengan ketik *info*",
   "template.menu": "*{{number}}* : *{{menu}}*",
   "menu.dasarHukum": "🧰 Dasar Hukum",
   "menu.tataTempat": "🧰 Tata Tempat",

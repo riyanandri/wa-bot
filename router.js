@@ -18,9 +18,10 @@ router.menu(f("menu.DH10"), [BotController, "dasarHukumSepuluh"]);
 router.menu(f("menu.DH11"), [BotController, "dasarHukumSebelas"]);
 router.menu(f("menu.DH12"), [BotController, "dasarHukumDuaBelas"]);
 
-router.menu(f("menu.tataTempat"), [BotController, "tataTempat"]);
-router.menu(f("menu.TT1"), [BotController, "fkpJateng"]);
-router.menu(f("menu.TT2"), [BotController, "tataTempatDoc"]);
+// router.menu(f("menu.tataTempat"), [BotController, "tataTempat"]);
+// router.menu(f("menu.TT1"), [BotController, "fkpJateng"]);
+// router.menu(f("menu.TT2"), [BotController, "tataTempatDoc"]);
+router.menu(f("menu.tataTempat"), [BotController, "tataTempatDoc"]);
 router.menu(f("menu.FKP1"), [BotController, "fkpJatengSatu"]);
 router.menu(f("menu.FKP2"), [BotController, "fkpJatengDua"]);
 router.menu(f("menu.FKP3"), [BotController, "fkpJatengTiga"]);
